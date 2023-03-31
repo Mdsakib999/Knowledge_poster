@@ -1,0 +1,15 @@
+.box{
+    border: 2px solid rebeccapurple;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(240, 248, 255, 0.68);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+img{
+    width: 80px;
+    border-radius: 50%;
+}
