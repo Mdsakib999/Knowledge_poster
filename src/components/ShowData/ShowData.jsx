@@ -1,7 +1,8 @@
 import React from 'react';
 import './ShowData.css'
 
-const ShowData = ({data, readTime}) => {
+const ShowData = ({data, readTime, bookmark}) => {
+    const { BlogTitle } = data
     return (
         <div className='parent-div'>
             <div className=' showData'>
@@ -20,7 +21,7 @@ const ShowData = ({data, readTime}) => {
                         </div>
                          
                          <p>{data.readTime} min read
-                         <span className='icon'> <i class="fa-regular fa-bookmark"></i> </span>
+                         <span onClick={() => bookmark(BlogTitle)} className='icon'> <i class="fa-regular fa-bookmark"></i> </span>
                          </p>
                     </div>
 

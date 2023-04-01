@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header/Header';
 import LoadData from './components/Data/LoadData';
@@ -8,7 +6,8 @@ import SideCard from './components/SideCard/SideCard';
 
 function App() {
   const [reading, setReading] = useState("");
-
+  const [BlogTitle, setBlogTitle] = useState([]);
+  const [toasts, setToasts] = useState(false);
   const readTime = (time) => {
     const previousTime = (localStorage.getItem("readTime"));
 
@@ -22,18 +21,40 @@ function App() {
       localStorage.setItem("readTime", time);
       setReading(time);
     }
-  };
-
-
-
+  }
   
+  const bookmark = (BlogTitle, id) => {
+    let updatedTitle = [];
+    let priviusTitle = JSON.parse(localStorage.getItem("BlogTitle"));
+    let priviusId = localStorage.getItem("id");
+    
+
+    if (priviusTitle) {
+      updatedTitle = [...priviusTitle, BlogTitle];
+      localStorage.setItem("BlogTitle", JSON.stringify(updatedTitle));
+      setBlogTitle(updatedTitle);
+    } else {
+      updatedTitle = [BlogTitle];
+      localStorage.setItem("BlogTitle", JSON.stringify(updatedTitle));
+      setBlogTitle(updatedTitle);
+    }
+
+    if (priviusId === id) {
+      setToasts(true);
+      toast("Already Exit!");
+    } else {
+      localStorage.setItem("id", id);
+      setToasts(false);
+    }
+};
+
   return (
     <div>
       <Header></Header>
       <div className='home'>
-        <LoadData readTime={readTime}></LoadData>
+        <LoadData readTime={readTime} bookmark={bookmark}></LoadData>
         <div className='side-card'>
-        <SideCard reading={reading}></SideCard>
+        <SideCard reading={reading} BlogTitle={BlogTitle}></SideCard>
         </div>
       </div>
       
@@ -72,7 +93,8 @@ function App() {
       </div>
     </div>
   );
+
+
 }
 
-
-export default App
+export default App;
