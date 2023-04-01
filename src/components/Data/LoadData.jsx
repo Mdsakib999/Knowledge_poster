@@ -13,7 +13,6 @@ const LoadData = () => {
 
     return (
         <div>
-            <h1>ke hobor vai{}</h1>
             {
                 loadData.map(data => <ShowData 
                     key={loadData.id}
