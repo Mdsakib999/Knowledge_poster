@@ -15,6 +15,13 @@ const SideCard = ({reading}) => {
             <div className='spent-text'>
                 <h2>Spent time on read: {time}</h2>
             </div>
+
+            <div className='blog-title b'>
+                <h2>Bookmarked Blog: </h2>
+                <div>
+
+                </div>
+            </div>
         </div>
     );
 };

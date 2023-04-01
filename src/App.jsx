@@ -10,8 +10,6 @@ function App() {
   const [reading, setReading] = useState("");
 
   const readTime = (time) => {
-
-
     const previousTime = (localStorage.getItem("readTime"));
 
     if(previousTime) {
@@ -25,6 +23,8 @@ function App() {
       setReading(time);
     }
   };
+
+
 
   
   return (

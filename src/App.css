@@ -46,3 +46,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .home{
+    flex-direction: column;
+  }
+
+  .side-card{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
