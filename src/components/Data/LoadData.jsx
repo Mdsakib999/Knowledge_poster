@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import ShowData from '../ShowData/ShowData';
 
-const LoadData = () => {
+const LoadData = ({readTime}) => {
     const [loadData, setLoadData] = useState([]);
 
     useEffect( ()=>{
@@ -16,7 +16,9 @@ const LoadData = () => {
             {
                 loadData.map(data => <ShowData 
                     key={loadData.id}
+                    readTime = {readTime}
                     data = {data}
+
                     ></ShowData>)
             }
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShowData.css'
 
-const ShowData = ({data}) => {
+const ShowData = ({data, readTime}) => {
     return (
         <div className='parent-div'>
             <div className=' showData'>
@@ -19,14 +19,14 @@ const ShowData = ({data}) => {
                             </div>
                         </div>
                          
-                         <p>{data.readTime} 
+                         <p>{data.readTime} min read
                          <span className='icon'> <i class="fa-regular fa-bookmark"></i> </span>
                          </p>
                     </div>
 
                     <h2 className='title'>{data.BlogTitle}</h2>
 
-                    <p className='mark-read'>Mark as read</p>
+                    <p onClick={() => readTime(data.readTime)} className='mark-read'>Mark as read</p>
 
                 </div>
             </div>

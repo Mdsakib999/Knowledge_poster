@@ -7,14 +7,33 @@ import LoadData from './components/Data/LoadData';
 import SideCard from './components/SideCard/SideCard';
 
 function App() {
+  const [reading, setReading] = useState("");
+
+  const readTime = (time) => {
+
+
+    const previousTime = (localStorage.getItem("readTime"));
+
+    if(previousTime) {
+      let sum = parseInt(previousTime) + parseInt(time);
+      localStorage.setItem("readTime", sum);
+      
+      setReading(sum)
+    }
+    else{
+      localStorage.setItem("readTime", time);
+      setReading(time);
+    }
+  };
+
   
   return (
     <div>
       <Header></Header>
       <div className='home'>
-        <LoadData></LoadData>
+        <LoadData readTime={readTime}></LoadData>
         <div className='side-card'>
-        <SideCard></SideCard>
+        <SideCard reading={reading}></SideCard>
         </div>
       </div>
     </div>

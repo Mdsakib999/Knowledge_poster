@@ -3,23 +3,23 @@
     "coverImage": "https://img.freepik.com/premium-vector/web-development-programming-laptop-smartphone_73903-163.jpg?w=1060", 
     "authorName" : "Kime Jon",
     "authorImg": "https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg?w=740", 
-    "readTime": "06 min read", "publishDate": "10 April"},
+    "readTime": "06", "publishDate": "10 April"},
 
     {"id": 2, "BlogTitle": "Best programming languages in 2023", 
     "coverImage": "https://img.freepik.com/premium-vector/software-development-web-coding-laptop-programming-concept-website-design-coding-remote-work-home_3482-5615.jpg?w=1380",
     "authorName" : "Sakib Al Hasan", 
     "authorImg": "https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg?w=740", 
-    "readTime": "04 min read", "publishDate": "03 March"},
+    "readTime": "04", "publishDate": "03 March"},
 
     {"id": 3, "BlogTitle": "Top Programming Blogs to Read in 2023", 
     "coverImage": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?w=996&t=st=1680288970~exp=1680289570~hmac=190e82b25b7d2f3d714438164d5a04e988d55a30095a646c94fb1ecc1673b6e3", 
     "authorName" : "Elon Musk",
     "authorImg": "https://img.freepik.com/free-photo/man-isolated-showing-facial-emotions_1303-20261.jpg?w=996&t=st=1680289488~exp=1680290088~hmac=32c5d3e2018b4fd558965a2334fc48131f03e7881e1e4aff3aada6ef99024581", 
-    "readTime": "05 min read", "publishDate": "22 June"},
+    "readTime": "05", "publishDate": "22 June"},
 
     {"id": 4, "BlogTitle": "how to start programming as a beginner?", 
     "coverImage": "https://img.freepik.com/free-vector/gradient-isometric-laptop-technology-background_52683-6158.jpg?w=996&t=st=1680289012~exp=1680289612~hmac=2b8af27223ee31e74ff665017bd5dc1c3e81f0b8ce678fe68287ec4e817e367e", 
     "authorName" : "Mukesh Ambani",
     "authorImg": "https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg?w=740", 
-    "readTime": "03 min read", "publishDate": " 15 May"}
+    "readTime": "03", "publishDate": " 15 May"}
 ]
