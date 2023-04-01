@@ -1,0 +1,10 @@
+
+
+.spent-text{
+    border: 2px solid #6047EC;
+    color: #6047EC;
+border-radius: 10px;
+}
+.spent-text h2{
+    font-size: 25px;
+}

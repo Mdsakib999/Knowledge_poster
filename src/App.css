@@ -14,6 +14,15 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+.home{
+  display: flex;
+  margin-right: 0px;
+}
+.side-card{
+  width: 50%;
+  margin-left: -300px;
+  margin-top: 50px;
+}
 
 @keyframes logo-spin {
   from {

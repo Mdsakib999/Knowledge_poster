@@ -3,7 +3,7 @@ import './ShowData.css'
 
 const ShowData = ({data}) => {
     return (
-        <div>
+        <div className='parent-div'>
             <div className=' showData'>
                 <div>
                     <img className='cover-img' src={data.coverImage} alt="" />
@@ -30,6 +30,8 @@ const ShowData = ({data}) => {
 
                 </div>
             </div>
+
+            
         </div>
     );
 };
